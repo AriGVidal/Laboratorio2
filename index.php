@@ -6,7 +6,7 @@
     <title>Hello World</title>
     <style>
         body {
-            background-color: #228B22; /* Forest Green background */
+            background-color: #228B22;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,8 +16,8 @@
         }
         .content {
             text-align: center;
-            color: #f5f5dc; /* Light cream text */
-            font-size: 48px; /* Large font size */
+            color: #f5f5dc;
+            font-size: 48px;
             font-weight: bold;
         }
     </style>
@@ -25,7 +25,7 @@
 <body>
     <div class="content">
         <?php
-        echo "Hello World!<br>";
+        echo "Hello Tera World!<br>";
         echo "Server: " . gethostname();
         ?>
     </div>
