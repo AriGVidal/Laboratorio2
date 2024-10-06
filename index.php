@@ -27,6 +27,7 @@
         <?php
         echo "Hello Tera World!<br>";
         echo "Server: " . gethostname();
+        echo "The server is running smoothly!<br>";
         ?>
     </div>
 </body>
