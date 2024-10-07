@@ -15,10 +15,22 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
+        .header {
+            text-align: center;
+            color: black;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
         .content {
             text-align: center;
             color: #f5f5dc;
             font-size: 48px;
+            font-weight: bold;
+        }
+        .server-info {
+            color: #696969; /* Dark grey */
+            font-size: 24px;
             font-weight: bold;
         }
         .footer {
@@ -32,11 +44,14 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        Laboratory 2 Presentation in progress... 📊
+    </div>
     <div class="content">
         <?php
         echo "Hello Tera World!🚀<br>";
         echo "The server is running smoothly! Kind of...<br>";
-        echo "Server: " . gethostname();
+        echo "<span class='server-info'>Server: " . gethostname() . " 🖥️</span><br>";
         ?>
     </div>
     <div class="footer">
