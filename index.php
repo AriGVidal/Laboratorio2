@@ -34,7 +34,7 @@
 <body>
     <div class="content">
         <?php
-        echo "Did you got the SNS? Toma 2<br>";
+        echo "Did you got the SNS? Take 3<br>";
         echo "Hello Tera World!<br>";
         echo "The server is running smoothly! Kind of...<br>";
         echo "Server: " . gethostname();
