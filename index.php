@@ -8,6 +8,7 @@
         body {
             background-color: #228B22;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -20,6 +21,14 @@
             font-size: 48px;
             font-weight: bold;
         }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: #f5f5dc;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +38,9 @@
         echo "The server is running smoothly! Kind of...<br>";
         echo "Server: " . gethostname();
         ?>
+    </div>
+    <div class="footer">
+        Powered by Teracloud 🚀
     </div>
 </body>
 </html>
