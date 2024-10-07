@@ -9,7 +9,7 @@
             background-color: #228B22;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center; 
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -21,16 +21,16 @@
             font-size: 48px; 
             font-weight: bold;
             margin-top: 20px;
-            margin-bottom: 40px; 
         }
         .content {
             text-align: center;
             color: #f5f5dc;
             font-size: 48px;
             font-weight: bold;
+            margin-bottom: 20px;
         }
         .server-info {
-            color: #2E8B57; 
+            color: #2C2C2C; 
             font-size: 36px; 
             font-weight: bold;
         }
@@ -60,4 +60,5 @@
     </div>
 </body>
 </html>
+
 
