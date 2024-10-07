@@ -37,6 +37,7 @@
         echo "Hello Tera World!<br>";
         echo "The server is running smoothly! Kind of...<br>";
         echo "Server: " . gethostname();
+        echo "Did you got the SNS?<br>";
         ?>
     </div>
     <div class="footer">
