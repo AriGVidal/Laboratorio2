@@ -22,7 +22,7 @@
             left: 0;
             width: 100%; 
             text-align: center;
-            background-color: black;
+            background-color: #006400;
             color: white;
             font-size: 48px; 
             font-weight: bold;
@@ -59,6 +59,7 @@
         echo "Hello TeraWorld!🚀<br>";
         echo "The server is running smoothly! Kind of...<br>";
         echo "<span class='server-info'>Server: " . gethostname() . " 🖥️</span><br>";
+        echo "<span class='server-info'>Server IP: " . $_SERVER['SERVER_ADDR'] . " 🌐</span><br>";
         ?>
     </div>
     <div class="footer">
@@ -66,6 +67,3 @@
     </div>
 </body>
 </html>
-
-
-
