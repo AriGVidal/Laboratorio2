@@ -12,12 +12,10 @@ phases:
       - echo Building the Docker image...
       - docker build -t $ECR_REPOSITORY:${CODE_VERSION} .
       - docker tag $ECR_REPOSITORY:${CODE_VERSION} $ECR_REGISTRY/$ECR_REPOSITORY:${CODE_VERSION}
-      - docker tag $ECR_REPOSITORY:${CODE_VERSION} $ECR_REGISTRY/$ECR_REPOSITORY:latest
   post_build:
     commands:
       - echo Pushing the Docker image to ECR...
       - docker push $ECR_REGISTRY/$ECR_REPOSITORY:${CODE_VERSION}
-      - docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
       - echo Writing image definition file for ECS deployment...
       - printf '[{"name":"ag-php","imageUri":"%s"}]' $ECR_REGISTRY/$ECR_REPOSITORY:${CODE_VERSION} > imagedefinitions.json
 artifacts:
