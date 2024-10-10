@@ -57,10 +57,10 @@
     <div class="content">
         <?php
         echo "Hello TeraWorld!🚀<br>";
+        echo "Welcome Nico and Martin!🚀<br>";
         echo "The server is running smoothly!<br>";
         echo "<span class='server-info'>Server: " . gethostname() . " 🖥️</span><br>";
-
-        // Get the EC2 Instance IP from metadata
+        
         $instanceIp = file_get_contents('http://169.254.169.254/latest/meta-data/local-ipv4');
         echo "<span class='server-info'>Server IP: " . $instanceIp . " 🖥️</span><br>";
         echo "<span class='server-info'>Container IP: " . $_SERVER['SERVER_ADDR'] . " 🌐</span><br>";
